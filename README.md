@@ -146,6 +146,10 @@ Explored nodes rendered sequentially
 
 Final path drawn in green
 
+
+---
+
+
  Color Scheme
 Element	Color
 Start Node	Green
@@ -164,6 +168,11 @@ BFS	Yes (uniform cost)	Yes	O(b^d)	O(b^d)
 
 * GBFS is complete in finite graphs without cycles when a visited set is maintained.
 
+
+---
+
+
+
 3.2 A* Search
 Advantages
 
@@ -180,6 +189,10 @@ Memory intensive
 Performance depends on heuristic
 
 Slower than GBFS when optimality not required
+
+
+---
+
 
 3.3 Greedy Best-First Search (GBFS)
 Advantages
@@ -198,6 +211,10 @@ Can get trapped in dead ends
 
 Poor worst-case performance
 
+---
+
+
+
 3.4 Dijkstra's Algorithm
 Advantages
 
@@ -214,6 +231,10 @@ Explores uniformly in all directions
 High node expansion
 
 Slower on large open grids
+
+---
+
+
 
 3.5 Breadth-First Search (BFS)
 Advantages
@@ -232,6 +253,9 @@ No heuristic guidance
 
 Large explored region for distant goals
 
+---
+
+
 4️ Test Cases and Visual Proof
 
 Default Configuration:
@@ -241,6 +265,8 @@ Start Node → (1,1)
 Goal Node → (13,13)
 
 Grid Size → 15x15
+---
+
 
 4.1 A* Search
  Best Case: Open Grid
@@ -252,7 +278,7 @@ Manhattan heuristic
 Minimal explored nodes
 
 Direct optimal path
-
+---
  
 
  Worst Case: Dense Maze
@@ -265,7 +291,7 @@ Larger explored region
 
 Still optimal path
 
-
+---
 
 4.2 Greedy Best-First Search
  Best Case: Clear Path
@@ -276,7 +302,6 @@ Rapid goal reach
 
 Minimal exploration
 
-
  Worst Case: U-Shaped Trap
 
 Wall blocks greedy direction
@@ -285,10 +310,10 @@ Backtracking required
 
 Possibly sub-optimal path
 
-  
+  ---
 
 4.3 Dijkstra's Algorithm
-✅ Best Case: Goal Near Start
+ Best Case: Goal Near Start
 
 Goal at (2,2)
 
@@ -302,7 +327,7 @@ Large expansion region
 
 Explores most accessible grid
 
-
+---
 
 4.4 Breadth-First Search
  Best Case: Goal at Depth 2
@@ -316,7 +341,7 @@ Goal at (13,13)
 Nearly entire grid explored
 
  
-
+---
 5️ Conclusion
 
 This project visually demonstrates the difference between informed and uninformed search strategies.
@@ -340,8 +365,8 @@ Lowest explored node count
 Optimal path length
 
 Best performance balance
-
-🛠️ How to Run
+---
+ How to Run
 python main.py
 
 Requires:
