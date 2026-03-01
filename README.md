@@ -1,12 +1,11 @@
-# 🧭 Dynamic Pathfinding Agent  
+#  Dynamic Pathfinding Agent  
 ### Roll Number: 24F-0594  
 ### Comprehensive Implementation Report  
 
-🔗 **GitHub Repository:** [ INSERT GITHUB LINK HERE ]
 
 ---
 
-# 1️⃣ Project Overview
+# 1️ Project Overview
 
 This project presents a comprehensive implementation of the **Dynamic Pathfinding Agent**, a GUI-based application developed using **Python** and **Tkinter**.
 
@@ -18,7 +17,7 @@ The application visualizes four classic search algorithms on a **15x15 grid**, a
 - Observe animated exploration in real time
 - View reconstructed shortest paths
 
-### ✅ Implemented Algorithms
+###  Implemented Algorithms
 - A* Search
 - Greedy Best-First Search (GBFS)
 - Dijkstra's Algorithm
@@ -26,7 +25,7 @@ The application visualizes four classic search algorithms on a **15x15 grid**, a
 
 ---
 
-# 2️⃣ Implementation Logic
+# 2️ Implementation Logic
 
 ---
 
@@ -138,7 +137,7 @@ Level-order search for unweighted graphs.
 
 The `_tick_visited()` method drives animation using:
 
-```python
+
 root.after(delay, callback)
 
 10ms delay per explored node
@@ -147,7 +146,7 @@ Explored nodes rendered sequentially
 
 Final path drawn in green
 
-🎨 Color Scheme
+ Color Scheme
 Element	Color
 Start Node	Green
 Goal Node	Red
@@ -155,7 +154,7 @@ Agent	Orange
 Explored Nodes	Dark Blue
 Final Path	Bright Green
 Walls	Slate Blue
-3️⃣ Pros and Cons Analysis
+3️ Pros and Cons Analysis
 3.1 Algorithm Comparison Table
 Algorithm	Optimal?	Complete?	Time Complexity	Space Complexity
 A*	Yes (admissible h)	Yes	O(b^d)	O(b^d)
@@ -233,7 +232,7 @@ No heuristic guidance
 
 Large explored region for distant goals
 
-4️⃣ Test Cases and Visual Proof
+4️ Test Cases and Visual Proof
 
 Default Configuration:
 
@@ -244,7 +243,7 @@ Goal Node → (13,13)
 Grid Size → 15x15
 
 4.1 A* Search
-✅ Best Case: Open Grid
+ Best Case: Open Grid
 
 No walls
 
@@ -254,9 +253,9 @@ Minimal explored nodes
 
 Direct optimal path
 
-📷 Insert Screenshot Here
+ 
 
-❌ Worst Case: Dense Maze
+ Worst Case: Dense Maze
 
 Walls force long detour
 
@@ -266,10 +265,10 @@ Larger explored region
 
 Still optimal path
 
-📷 Insert Screenshot Here
+
 
 4.2 Greedy Best-First Search
-✅ Best Case: Clear Path
+ Best Case: Clear Path
 
 No walls
 
@@ -277,9 +276,8 @@ Rapid goal reach
 
 Minimal exploration
 
-📷 Insert Screenshot Here
 
-❌ Worst Case: U-Shaped Trap
+ Worst Case: U-Shaped Trap
 
 Wall blocks greedy direction
 
@@ -287,7 +285,7 @@ Backtracking required
 
 Possibly sub-optimal path
 
-📷 Insert Screenshot Here
+  
 
 4.3 Dijkstra's Algorithm
 ✅ Best Case: Goal Near Start
@@ -296,36 +294,34 @@ Goal at (2,2)
 
 Minimal expansion
 
-📷 Insert Screenshot Here
+  
 
-❌ Worst Case: Dense Walls
+ Worst Case: Dense Walls
 
 Large expansion region
 
 Explores most accessible grid
 
-📷 Insert Screenshot Here
+
 
 4.4 Breadth-First Search
-✅ Best Case: Goal at Depth 2
+ Best Case: Goal at Depth 2
 
 Very limited expansion
 
-📷 Insert Screenshot Here
-
-❌ Worst Case: Maximum Distance
+Worst Case: Maximum Distance
 
 Goal at (13,13)
 
 Nearly entire grid explored
 
-📷 Insert Screenshot Here
+ 
 
-5️⃣ Conclusion
+5️ Conclusion
 
 This project visually demonstrates the difference between informed and uninformed search strategies.
 
-🔎 Key Findings
+ Key Findings
 
 A* → Best balance of efficiency and optimality
 
@@ -335,7 +331,7 @@ Dijkstra → Always optimal but inefficient in large grids
 
 BFS → Simple, predictable, but memory heavy
 
-🏆 Final Observation
+ Final Observation
 
 A* with Manhattan distance consistently provided:
 
